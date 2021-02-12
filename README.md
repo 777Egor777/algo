@@ -1,6 +1,36 @@
-[![Build Status](https://travis-ci.org/777Egor777/job4j_dreamjob.svg?branch=master)](https://travis-ci.org/777Egor777/job4j_dreamjob)
-[![codecov](https://codecov.io/gh/777Egor777/job4j_dreamjob/branch/master/graph/badge.svg?token=0FI25753Z1)](https://codecov.io/gh/777Egor777/job4j_dreamjob)
+# Алгоритмы и структуры данных
+1. [Графы](#графы)
+    
+    1.1 [Поиск в глубину](#поиск-в-глубину)
+    
+## Графы    
+###Поиск в глубину
+Рекурсивный алгоритм обхода вершин графа.
+Предполагает продвижение вглубь до тех пор, пока это возможно.
 
-# dreamjob
+Псевдокод:
+```
+for vertex: Graph
+    if (vertex.notUsed() {
+        dfs(vertex)
+    }
 
-CRUD MVC web-app
+dfs(vertex) {
+    vertex.setUsed();
+    for related: vertex.allRelated()
+        if (related.notUsed()) {
+            dfs(related)
+        }
+}
+```
+Таким образом, мы вызываем рекурсивную функцию в цикле из всех вершин графа.
+Благодаря этому алгоритм будет работать даже если граф несвязный, имеет несколько
+компонент связности. 
+Перед вызовом рекурсивной функцией у вершины, мы всегда проверяем,
+что оан ещё не была пройдена в процессе обхода (vertex.notUsed()).
+
+Асимптотическая сложность алгоритма составляет O(N+M), где
+N - число вершин в графе, а
+M - суммарное число рёбер в графе.
+
+[Реализация]()
