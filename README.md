@@ -34,4 +34,4 @@ dfs(vertex) {
 N - число вершин в графе, а
 M - суммарное число рёбер в графе.
 
-[Реализация]()
+[Реализация](https://github.com/777Egor777/algo/tree/master/src/main/java/ru/job4j/algo/dfs)
