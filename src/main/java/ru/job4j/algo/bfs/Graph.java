@@ -1,4 +1,4 @@
-package ru.job4j.algo.dfs;
+package ru.job4j.algo.bfs;
 
 import java.util.ArrayList;
 import java.util.List;

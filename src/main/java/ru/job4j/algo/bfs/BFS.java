@@ -1,15 +1,17 @@
-package ru.job4j.algo.dfs;
+package ru.job4j.algo.bfs;
+
+import ru.job4j.algo.dfs.Graph;
 
 /**
  * @author Egor Geraskin(yegeraskin13@gmail.com)
  * @version 1.0
  * @since 19.02.2021
  */
-public class DFS {
-    private final Graph graph;
+public class BFS {
+    private final ru.job4j.algo.dfs.Graph graph;
     private final boolean[] used;
 
-    public DFS(Graph graph) {
+    public BFS(Graph graph) {
         this.graph = graph;
         used = new boolean[graph.getSize() + 1];
         for (int i = 1; i <= graph.getSize(); ++i) {
@@ -17,29 +19,23 @@ public class DFS {
         }
     }
 
+    public boolean[] getUsed() {
+        return used;
+    }
+
     public void search() {
         for (int i = 1; i <= graph.getSize(); ++i) {
             if (!used[i]) {
-                dfs(i);
+                bfs(i);
             }
         }
     }
 
     public void search(int v) {
-        dfs(v);
+        bfs(v);
     }
 
-    private void dfs(int v) {
-        used[v] = true;
-        //Main logic of search
-        for (int q : graph.getRelates(v)) {
-            if (!used[q]) {
-                dfs(q);
-            }
-        }
-    }
+    private void bfs(int v) {
 
-    public boolean[] getUsed() {
-        return used;
     }
 }
