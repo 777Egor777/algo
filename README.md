@@ -7,15 +7,16 @@
     2.1 [Линейный поиск](#линейный-поиск)  
     2.2 [Бинарный поиск](#бинарный-поиск)  
     2.3 [Тернарный поиск](#тернарный-поиск)  
-3. [Сортировки]()    
-    3.1 [Count sort]()
-    3.2 [Quick sort]()
-    3.3 [Merge sort]()
-    3.4 [Heap sort]()
-    3.5 [Bubble sort]()
-    3.6 [Selection sort]()
-4. [Строки]()    
-5. [Структуры данных]()    
+3. [Сортировки](#сортировки)    
+    3.1 [Count sort O(N)](#count-sort-on)
+    3.2 [Quick sort O(N*logN)](#quick-sort-onlogn)
+    3.3 [Merge sort O(N*logN)](#merge-sort-onlogn)
+    3.4 [Heap sort O(N*logN)](#heap-sort-onlogn)
+    3.5 [Bubble sort O(N^2)](#bubble-sort-on2)
+    3.6 [Selection sort O(N^2)](#selection-sort-on2)
+4. [Строки](#cтроки)    
+    4.1 []()
+5. [Структуры данных](#cтруктуры-данных)    
     
 ## Графы  
 
@@ -146,4 +147,12 @@ M - суммарное число рёбер в графе.
 
 ## Cтроки
 
+## Z-function
+## Prefix-function
+## Бор
+## Суффиксный массив за O(N*logN)
+
 ## Cтруктуры данных
+
+## Дерево отрезков
+## Дерево Фенвика
