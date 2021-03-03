@@ -1,6 +1,9 @@
-package ru.job4j.algo.bfs;
+package ru.job4j.algo.graph.bfs;
 
-import ru.job4j.algo.dfs.Graph;
+import ru.job4j.algo.graph.dfs.Graph;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * @author Egor Geraskin(yegeraskin13@gmail.com)
@@ -8,7 +11,7 @@ import ru.job4j.algo.dfs.Graph;
  * @since 19.02.2021
  */
 public class BFS {
-    private final ru.job4j.algo.dfs.Graph graph;
+    private final ru.job4j.algo.graph.dfs.Graph graph;
     private final boolean[] used;
 
     public BFS(Graph graph) {
@@ -36,6 +39,18 @@ public class BFS {
     }
 
     private void bfs(int v) {
-
+        Queue<Integer> queue = new LinkedList<>();
+        used[v] = true;
+        queue.offer(v);
+        while (!queue.isEmpty()) {
+            v = queue.poll();
+            //Main logic with vertex
+            for (int relate : graph.getRelates(v)) {
+                if (!used[relate]) {
+                    used[relate] = true;
+                    queue.offer(relate);
+                }
+            }
+        }
     }
 }

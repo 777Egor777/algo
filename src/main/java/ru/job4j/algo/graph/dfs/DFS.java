@@ -1,4 +1,4 @@
-package ru.job4j.algo.dfs;
+package ru.job4j.algo.graph.dfs;
 
 /**
  * @author Egor Geraskin(yegeraskin13@gmail.com)
