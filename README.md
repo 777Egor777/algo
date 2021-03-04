@@ -132,8 +132,8 @@ M - суммарное число рёбер в графе.
 т.к. перебираются все M рёбер и на каждой из N итераций производится линейный (O(N)) 
 поиск вершины с минимальным d
 
-[Реализация]()
-[Тест]()
+[Реализация](src/main/java/ru/job4j/algo/graph/djkstra/Djkstra.java)
+[Тест](src/test/java/ru/job4j/algo/graph/djkstra/DjkstraTest.java)
  
 ## Поиск
 
