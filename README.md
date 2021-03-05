@@ -138,8 +138,25 @@ M - суммарное число рёбер в графе.
 ## Поиск
 
 ### Линейный поиск
+[Реализация](https://github.com/777Egor777/job4j_threads/blob/master/src/main/java/ru/job4j/pools/ParallelIndexSearch.java) - 
+с применением ForkJoinPool
+[Тест](https://github.com/777Egor777/job4j_threads/blob/master/src/test/java/ru/job4j/pools/ParallelIndexSearchTest.java)
+
 ### Бинарный поиск
+Найти элемент по значению в упорядоченном по возрастанию(убыванию) отрезке.
+Алгоритм(отрезак отсортирован по возрастанию):
+1. Смотрим на средний элемент отрезка.
+2. Если он >= искомого значения, то ищем в первой половине отрезка. Иначе - в правой.
+[Реализация](src/main/java/ru/job4j/algo/search/binary/BinarySearch.java)
+[Тест](src/test/java/ru/job4j/algo/search/binary/BinarySearchTest.java)
+
 ### Тернарный поиск
+Найти пиковое значение унимодальной функции.
+Значения массива должны быть отсортированы таким
+образом, чтобы представляли собой унимодальную функцию.
+Например, до определённого момента строго возрастали, затем строго убывали.
+[Реализация](src/main/java/ru/job4j/algo/search/ternar/TernarSearch.java)
+[Тест](src/test/java/ru/job4j/algo/search/ternar/TernarSearchTest.java)
 
 ## Сортировки
 
