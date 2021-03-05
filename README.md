@@ -161,20 +161,32 @@ M - суммарное число рёбер в графе.
 ## Сортировки
 
 ### Count sort O(N)
+TODO
 ### Quick sort O(N*logN)
+TODO
 ### Merge sort O(N*logN)
+TODO
 ### Heap sort O(N*logN)
+TODO
 ### Bubble sort O(N^2)
+TODO
 ### Selection sort O(N^2)
+TODO
 
 ## Cтроки
 
 ### Z-function
+TODO
 ### Prefix-function
+TODO
 ### Бор
+TODO
 ### Суффиксный массив за O(N*logN)
+TODO
 
 ## Cтруктуры данных
 
 ### Дерево отрезков
+TODO
 ### Дерево Фенвика
+TODO
